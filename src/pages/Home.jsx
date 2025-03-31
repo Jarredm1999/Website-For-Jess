@@ -2,6 +2,8 @@ import Card from "../components/Card";
 import "../css/Home.css";
 import { useState } from "react";
 import { useCardContext } from "../context/CardContext";
+// import { FaArrowRightArrowLeft, FaArrowRightArrowRight } from "react-icons/fa6";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 function Home() {
   const { setIsFlipped } = useCardContext();
@@ -40,17 +42,9 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="movie-overlay">
-        <button className="arrow left" onClick={onLeftClicked}>
-          →
-        </button>
-      </div>
+      <FaArrowAltCircleLeft className="arrow left" onClick={onLeftClicked} />
       <Card reason={reasons[cardIndex]} />
-      <div className="movie-overlay">
-        <button className="arrow" onClick={onRightClicked}>
-          →
-        </button>
-      </div>
+      <FaArrowAltCircleRight className="arrow" onClick={onRightClicked} />
     </div>
   );
 }

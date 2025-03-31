@@ -19,7 +19,7 @@ body {
     transform-style: preserve-3d;
     border-radius: .75rem;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
-    transition: 300ms;
+    transition: 400ms;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
     cursor: pointer;
 }
