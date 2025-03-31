@@ -1,25 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./css/App.css";
-import ReactCardFlip from "react-card-flip";
+import Home from "./pages/Home";
+import Photos from "./pages/Photos";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 function App() {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  function flipCard() {
-    setIsFlipped(!isFlipped);
-  }
-
   return (
-    <div>
-      <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
-        <div className='card' onClick={flipCard}>
-          <h1>Front</h1>
-        </div>
-        <div className="card card-back" onClick={flipCard}>
-          <h1>Back</h1>
-        </div>
-      </ReactCardFlip>
-    </div>
+    <>
+      <NavBar />
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Photos" element={<Photos />} />
+        </Routes>
+      </main>
+    </>
   );
 }
 
