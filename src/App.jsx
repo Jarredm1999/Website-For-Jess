@@ -4,10 +4,11 @@ import Home from "./pages/Home";
 import Photos from "./pages/Photos";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import { CardProvider } from "./context/CardContext";
 
 function App() {
   return (
-    <>
+    <CardProvider>
       <NavBar />
       <main className="main-content">
         <Routes>
@@ -15,7 +16,7 @@ function App() {
           <Route path="/Photos" element={<Photos />} />
         </Routes>
       </main>
-    </>
+    </CardProvider>
   );
 }
 

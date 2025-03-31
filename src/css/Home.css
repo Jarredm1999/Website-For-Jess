@@ -5,3 +5,7 @@
     align-items: center;
     margin-top: 10%;
 }
+
+.arrow.left {
+    transform: rotateY(180deg);
+}

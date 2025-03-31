@@ -1,19 +1,24 @@
-import { useState } from "react";
 import "../css/card.css";
+import { useCardContext } from "../context/CardContext";
 
 function Card({reason}) {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const {isFlipped, setIsFlipped} = useCardContext();
+
+  const toggleFlipped = () => {
+    setIsFlipped(!isFlipped);
+  };
 
   return (
     <div
       className={`card ${isFlipped ? "flip" : ""}`}
-      onClick={() => setIsFlipped(!isFlipped)}
+      onClick={toggleFlipped}
     >
       <div className="front">
-        <h1>Front</h1>
+        <h1>I Love Jess Because...</h1>
+        <p>(Click To Reveal)</p>
       </div>
       <div className="back">
-        <h1>{reason}</h1>
+        <p>{reason}</p>
       </div>
     </div>
   );
