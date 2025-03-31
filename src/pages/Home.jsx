@@ -9,8 +9,6 @@ function Home() {
   const [cardIndex, setCardIndex] = useState(startingIndex);
   const [prevIndex, setPrevIndex] = useState(startingIndex);
 
-  // Math.floor(Math.random() * max);
-
   function onLeftClicked() {
     setCardIndex(prevIndex);
   }
