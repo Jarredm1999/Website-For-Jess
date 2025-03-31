@@ -15,7 +15,7 @@ body {
     margin: 50px auto;
     margin-left: 5%;
     margin-right: 5%;
-    background: skyblue;
+    background: rgb(251, 151, 168);
     transform-style: preserve-3d;
     border-radius: .75rem;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
