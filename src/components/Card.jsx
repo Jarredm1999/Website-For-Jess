@@ -18,7 +18,7 @@ function Card({reason}) {
         <p>(Click To Reveal)</p>
       </div>
       <div className="back">
-        <p>{reason}</p>
+        <p className="reason-text">{reason}</p>
       </div>
     </div>
   );

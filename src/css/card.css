@@ -20,8 +20,7 @@ body {
     border-radius: .75rem;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
     transition: 300ms;
-    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
-    translateY(var(--translate-y, 0));
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
     cursor: pointer;
 }
 
@@ -34,7 +33,7 @@ body {
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
 }
 
-.card .front, 
+.card .front,
 .card .back {
     position: absolute;
     backface-visibility: hidden;
@@ -46,4 +45,9 @@ body {
 
 .card:hover {
     box-shadow: 0
+}
+
+.reason-text {
+    font-weight: bold;
+    font-size: 30px;
 }
