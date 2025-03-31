@@ -1,10 +1,10 @@
 .home {
     display: grid;
     grid-template-columns: .7fr 1.5fr .7fr;
-    grid-template-rows: 150%;
+    grid-template-rows: 200%;
     justify-items: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .arrow.left {
@@ -16,6 +16,10 @@
     width: 30%;
     cursor: pointer;
     box-shadow: 0 0 0 rgba(0, 0, 0, .3);
+    max-width: 58.5px;
+    min-width: 58.5px;
+    min-height: 58.5px;
+    max-height: 58.5px;
     border-radius: 10rem;
     background-color: rgb(251, 151, 168);
     transform: perspective(1000px) translateY(var(--translate-y, 0));
