@@ -13,7 +13,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/Website-For-Jess" element={<Home />} />
-          <Route path="/Photos" element={<Photos />} />
+          <Route path="/Website-For-Jess/Photos" element={<Photos />} />
         </Routes>
       </main>
     </CardProvider>

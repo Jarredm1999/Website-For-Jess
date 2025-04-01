@@ -2,7 +2,6 @@ import Card from "../components/Card";
 import "../css/Home.css";
 import { useState } from "react";
 import { useCardContext } from "../context/CardContext";
-// import { FaArrowRightArrowLeft, FaArrowRightArrowRight } from "react-icons/fa6";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { Reasons } from "../data/Reasons";
 
