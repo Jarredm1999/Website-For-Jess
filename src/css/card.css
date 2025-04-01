@@ -38,6 +38,7 @@
 
 .card .back {
     transform: rotateY(180deg);
+    padding: 2rem;
 }
 
 .card:hover {
